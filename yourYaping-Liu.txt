@@ -1,0 +1,109 @@
+https://codepen.io/yapingliu/pen/MWbJjOe?editors=1100
+1. What is Semantic HTML? 
+Use meaningful tags on a web page rather than just presentation.
+2. What is HTML used for? 
+It's used to mark up content in a web page.
+3. What is an attribute and where do we put it? 
+Attribute gives additional information about the element and it's usually added in the opening tag.
+4. What is the h1 tag used for? How many times should I use it on a page?
+It's used for the most important heading in the page and should been used once on a page.
+5. Name two tags that have required attributes
+<img> <a>
+6. What do we put in the head of our HTML document? 
+<title>
+7. What is an id? 
+To identify one element when styling it in a style sheet.
+8. What elements can I add an id to? 
+Any HTML elements.
+9. How many times can I use the same id on a page? 
+same id can only use once on a page
+10. What is a class? 
+To identify one or more elements when styling them on css
+11. What elements can I add a class to? 
+any HTML elements
+12. How many times can I use the same class on a page? 
+as many times as you want
+13. How do I get my link to open in a new tab?
+Add a target attribute and set it to _blank in the opening anchor element
+14. What is the alt attribute in the image tag used for? 
+alternative information is the image cannot be displayed
+15. How do I reference an id?
+#
+16. What is the difference between a section and a div
+<section> is a sementic tag and it is used for grouped contents, whereas <div> is a generic container that by itself doesn't represent anything
+17. What is CSS used for? 
+CSS stands for Cascading Style Sheets and it's used for styling the web pages
+18. How to we select an element? Example - every h2 on the page
+using selectors. ---<h2>
+19. What is the difference between a class and an id? - Give me an example of when I might use each one
+Id is used to identify one element, but class is used to identify one or more elements. For example, if you want to change the color of h2 in first section of your webpage, you can use ID to identify it; whereas if you want to change color of <p> in second and third section of webpage, use class.
+20. How do we select classes in CSS?
+use `.`, followed by the class name
+21. How do we select a p element with a single class of “human””?
+.human
+22. What is a parent child selector? When would this be useful? 
+It has two seletors seperated by a > symbol. The first is the parent element, and the second is the child element. This selector only selects direct children of the first element.
+23. How do you select all links within a div with the class of sidebar?
+div a.sidebar
+24. What is a pseudo selector?
+Pseudo selector is used to define a special state of an element, eg. when a mouse hover it
+25. What do we use the change the spacing between lines?
+line-height
+26. What do we use to change the spacing between letters?
+letter-spacing
+27. What do we use to to change everything to CAPITALS? lowercase? Capitalize?
+using text-transform property with the value of "uppercase","lowercase" and "capitalize"
+28. How do I add a 1px border around my div that is dotted and black?
+div {
+    border: 1px dotted black;
+}
+29. How do I select everything on the page? 
+using the universal selector "*"
+30. How do I write a comment in CSS?
+/* comment */
+31. How do I find out what file I am in, when I am using the command line? 
+pwd
+32. Using the command line - how do I see a list of files/folders in my curren
+t folder?
+ls
+33. How do I remove a file via the command line? Why do I have to be careful with this? 
+rm filename. Because the deletion is irretrivable.
+34. Why should I use version control? 
+It helps to keep track of changes and help teams to collaborate effectively
+35. How often should I commit to github?
+Every time when you make a change.
+36. What is the command we would use to push our repo up to github? 
+git push
+37. Walk me through Lambda's git flow. 
+step 1: using "Fork" to create my own repo
+step 2: using the "clone" botton or get my link to the repo
+step 3: using cd command in termial go to the right directory
+step 4: clone the repo using git clone command
+step 5: using cd <repo-name> into the created repo
+step 6: create a new branch using git checkout -b "firstname-lastname"
+step 7: using git add and git commit -m "your comment" to add and commit changes
+step 8: using git push -u origin branch-name to push your changes up to your main branch in github
+step 9: submit a PR on github
+step 10: choose my-name branch on the Branch botton and then click New pull request
+step 11: change the base repository to my forked repo and then click create pull request
+
+
+Stretch Questions
+
+    1. What is the difference between an inline element and a block element?
+    Block elements always create a new line but inline elements are always side-side
+
+    2. What happens when an element is positioned absolutely? 
+    An absolutely positioned element no longer exists in the normal document layout flow. Instead, it sits on its own layer separate from everything else.
+    An element with position: absolute; is positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed).
+
+    3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width? 
+
+    4. Name 3 elements that are diplay block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
+    display block by default: <p>, <div>, <h1-h6>
+    dispaly inline by default: <img>, <span>, <a>
+    dispaly inline-block by default: <button>
+
+    5. In your own words, explain the box model. What is the "fix" for the box model, in other words, how do we make all elements respect the width we've given them? 
+    Box model is the layout of the web page which including four parts: padding, border and margin.
+    Since width only works with block level elements, we need to use display:inline-block; in order to apply width to inline elements.
